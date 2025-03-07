@@ -1,0 +1,96 @@
+/* Weather widget container styles */
+.weather-widget {
+    background-color: var(--light-input-bg); /* Light mode background color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the widget */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for changes */
+}
+
+/* Dark mode styles for weather widget */
+.dark-mode .weather-widget {
+    background-color: var(--dark-input-bg); /* Dark mode background color */
+}
+
+/* Temperature text styles */
+.weather-widget .temperature {
+    font-size: 1.5rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+}
+
+/* Description text styles */
+.weather-widget .description {
+    color: var(--light-text); /* Light mode text color */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+/* Dark mode styles for description text */
+.dark-mode .weather-widget .description {
+    color: var(--dark-text); /* Dark mode text color */
+}
+
+/* Additional details text styles */
+.weather-widget .details {
+    margin-top: 5px; /* Margin above details */
+    color: #666; /* Light mode text color */
+}
+
+/* Dark mode styles for additional details text */
+.dark-mode .weather-widget .details {
+    color: #aaa; /* Dark mode text color */
+}
+
+/* Styles for loading and error states */
+.weather-widget.loading,
+.weather-widget.error {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100px; /* Minimum height */
+    flex-direction: column; /* Stack content vertically */
+}
+
+/* Form control styles */
+.weather-widget .form-control {
+    background-color: rgba(255, 255, 255, 0.2); /* Light mode background color */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light mode border color */
+    color: inherit; /* Inherit text color */
+}
+
+/* Dark mode styles for form controls */
+.dark-mode .weather-widget .form-control {
+    background-color: rgba(0, 0, 0, 0.2); /* Dark mode background color */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Dark mode border color */
+}
+
+/* Primary button styles */
+.weather-widget .btn-primary {
+    background-color: var(--primary-color); /* Primary button background color */
+    border-color: var(--primary-color); /* Primary button border color */
+}
+
+/* Weather badge styles for task items */
+.task-item .badge,
+.task-card .badge {
+    font-size: 0.7rem; /* Small font size */
+    padding: 0.25rem 0.5rem; /* Padding inside the badge */
+    margin-left: 0.5rem; /* Margin to the left */
+    vertical-align: middle; /* Align vertically in the middle */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .weather-widget .weather-header {
+        flex-direction: column; /* Stack header content vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .weather-widget form {
+        margin-top: 10px; /* Margin above the form */
+        width: 100%; /* Full width form */
+    }
+    
+    .weather-widget input {
+        width: 100% !important; /* Full width input */
+    }
+}
