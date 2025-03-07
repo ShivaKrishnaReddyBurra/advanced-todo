@@ -43,7 +43,7 @@ npm start
 The application will run on `http://localhost:3000/` by default.
 
 ## Folder Structure
-```
+```markdown
 advanced-todo/
 │── /src
 │   ├── components
@@ -76,6 +76,7 @@ advanced-todo/
 │── /public
 │── package.json
 │── README.md
+│── .env  # Add your weather API key here
 ```
 
 ## Usage

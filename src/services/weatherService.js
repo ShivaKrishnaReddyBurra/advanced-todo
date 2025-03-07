@@ -1,7 +1,8 @@
-// src/services/weatherService.js - Enhanced with Thunk support
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const API_KEY = "dd06122dfa44aaa69ee4a459ee1d55aa"; // Replace with your actual API key from OpenWeatherMap or similar
+// Use environment variables with fallback for development
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY; 
+console.log(API_KEY);
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 // Thunk action to fetch weather data
